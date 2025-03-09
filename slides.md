@@ -13,8 +13,8 @@ colorSchema: dark
 css: unocss
 background: https://source.unsplash.com/collection/94734566/1920x1080
 fonts:
-  sans: 'Inter'
-  mono: 'Fira Code'
+  sans: "Inter"
+  mono: "Fira Code"
 layout: cover
 ---
 
@@ -22,131 +22,14 @@ layout: cover
 
 Best practices for AI powered coding
 
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 ---
 transition: slide-up
 layout: default
+src: ./pages/why-ai.md
 class: text-center
 ---
 
-# Why Use AI Coding Tools?
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-
-<div class="space-y-4 text-left">
-
-<div class="flex items-start space-x-2">
-  <div class="text-blue-500 text-xl">💻</div>
-  <div>
-    <div class="font-bold">Faster Development</div>
-    <div class="text-sm opacity-75">Spend less time writing code</div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-purple-500 text-xl">🎨</div>
-  <div>
-    <div class="font-bold">UI/UX Generation</div>
-    <div class="text-sm opacity-75">Create interfaces with natural language</div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-green-500 text-xl">📄</div>
-  <div>
-    <div class="font-bold">Documentation & Tests</div>
-    <div class="text-sm opacity-75">Automatically generate comprehensive docs</div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-yellow-500 text-xl">🔍</div>
-  <div>
-    <div class="font-bold">Documentation Search</div>
-    <div class="text-sm opacity-75">Auto search through developer resources</div>
-  </div>
-</div>
-
-</div>
-
-<div class="space-y-4 text-left">
-
-<div class="flex items-start space-x-2">
-  <div class="text-red-500 text-xl">📱</div>
-  <div>
-    <div class="font-bold">Code-Free Apps</div>
-    <div class="text-sm opacity-75">Generate apps without coding with <a href="https://madewithclaude.com/" target="_blank" class="text-blue-400">Claude Artifacts</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-teal-500 text-xl">📊</div>
-  <div>
-    <div class="font-bold">Create Presentations</div>
-    <div class="text-sm opacity-75">Build slides like this one with <a href="https://sli.dev" target="_blank" class="text-blue-400">Sli.dev</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-indigo-500 text-xl">📝</div>
-  <div>
-    <div class="font-bold">Class Notes</div>
-    <div class="text-sm opacity-75">Take notes with <a href="https://www.markdownguide.org" target="_blank" class="text-blue-400">Markdown</a> or <a href="https://github.com/James-Yu/latex-workshop/wiki/Install" target="_blank" class="text-blue-400">LaTeX</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-orange-500 text-xl">💡</div>
-  <div>
-    <div class="font-bold">Vibe Coding</div>
-    <div class="text-sm opacity-75">Just write prompts and see where it takes you</div>
-  </div>
-</div>
-
-</div>
-
-</div>
-::right::
-
-<div class="space-y-4">
-
-<div class="flex items-start space-x-2">
-  <div class="text-red-500 text-xl">📱</div>
-  <div>
-    <div class="font-bold">Code-Free Apps</div>
-    <div class="text-sm opacity-75">Generate apps without coding with <a href="https://madewithclaude.com/" target="_blank" class="text-blue-400">Claude Artifacts</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-teal-500 text-xl">📊</div>
-  <div>
-    <div class="font-bold">Create Presentations</div>
-    <div class="text-sm opacity-75">Build slides like this one with <a href="https://sli.dev" target="_blank" class="text-blue-400">Sli.dev</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-indigo-500 text-xl">📝</div>
-  <div>
-    <div class="font-bold">Class Notes</div>
-    <div class="text-sm opacity-75">Take notes with <a href="https://www.markdownguide.org" target="_blank" class="text-blue-400">Markdown</a> or <a href="https://github.com/James-Yu/latex-workshop/wiki/Install" target="_blank" class="text-blue-400">LaTeX</a></div>
-  </div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-orange-500 text-xl">💡</div>
-  <div>
-    <div class="font-bold">Vibe Coding</div>
-    <div class="text-sm opacity-75">Just write prompts and see where it takes you</div>
-  </div>
-</div>
-
-</div>
 
 ---
 transition: slide-up
@@ -155,107 +38,33 @@ layout: default
 
 # Current Landscape: Categories
 
-Three main categories of AI tools
-
 <div class="grid grid-cols-1 gap-3 mt-5">
 
-<div class="p-3 rounded-lg border border-blue-500 bg-blue-500/10">
-  <h3 class="text-lg font-bold text-blue-400">Chat</h3>
-  <p class="mt-1 text-sm">Simple chat interface with optional code execution capabilities directly in the chat environment</p>
-</div>
+<v-clicks>
+  <div class="p-3 rounded-lg border border-blue-500 bg-blue-500/10">
+    <h3 class="text-lg font-bold text-blue-400">Chat</h3>
+    <p class="mt-1 text-sm">Simple chat interface that can have self contained features like code execution</p>
+  </div>
 
-<div class="p-3 rounded-lg border border-green-500 bg-green-500/10">
-  <h3 class="text-lg font-bold text-green-400">Code Editor</h3>
-  <p class="mt-1 text-sm">Enhanced IDE features including intelligent autocomplete, integrated chat, and automated code modifications</p>
-</div>
+  <div class="p-3 rounded-lg border border-green-500 bg-green-500/10">
+    <h3 class="text-lg font-bold text-green-400">Code Editor</h3>
+    <p class="mt-1 text-sm">IDE with AI features like intelligent autocomplete, integrated chat, and auto-applying changes</p>
+  </div>
 
-<div class="p-3 rounded-lg border border-purple-500 bg-purple-500/10">
-  <h3 class="text-lg font-bold text-purple-400">Agent</h3>
-  <p class="mt-1 text-sm">AI systems that generate complete projects or interact with codebases exclusively through natural language prompts</p>
-</div>
-
+  <div class="p-3 rounded-lg border border-purple-500 bg-purple-500/10">
+    <h3 class="text-lg font-bold text-purple-400">Agent</h3>
+    <p class="mt-1 text-sm">AI systems that generate projects or interact with codebases primarily through prompts</p>
+  </div>
+</v-clicks>
 </div>
 
 
 ---
 transition: slide-up
 layout: default
+src: ./pages/landscape.md
 ---
 
-# Popular AI Tools
-
-<div class="mt-4">
-
-```mermaid {scale: 0.8, theme: 'dark'}
-flowchart 
-  chat[Chat]
-  ide[Code Editor]
-  agent[Agent]
-
-  %% Tools
-  gpt[ChatGPT]:::chatTool
-  claude[Claude]:::chatTool
-  
-  windsurf[Windsurf]:::ideTool
-  cursor[Cursor]:::ideTool
-  
-  claudeCode[Claude Code]:::agentTool
-  bolt[Bolt.new]:::agentTool
-  replit[Replit AI]:::multiTool
-  v0[v0.dev]:::multiTool
-  
-  %% Connections
-  chat --> gpt & claude
-  ide --> windsurf & cursor
-  agent --> claudeCode & bolt
-  
-  %% Cross-category tools
-  replit --- ide
-  replit --- agent
-
-  v0 --- chat
-  v0 --- agent
-  
-  
-  
-  %% Custom styling
-  classDef categoryClass fill:#2c3e50,stroke:#3498db,stroke-width:2px,color:#fff,rounded,font-weight:bold,padding:10px
-  classDef chatTool fill:#1a202c,stroke:#3b82f6,stroke-width:1px,color:#93c5fd
-  classDef ideTool fill:#1a202c,stroke:#10b981,stroke-width:1px,color:#6ee7b7
-  classDef agentTool fill:#1a202c,stroke:#8b5cf6,stroke-width:1px,color:#c4b5fd
-  classDef multiTool fill:#1a202c,stroke:#f59e0b,stroke-width:1px,color:#fcd34d,font-style:italic
-  
-  %% Add clickable links to each tool - correct syntax for tooltips
-  click gpt "https://chat.openai.com" "Visit ChatGPT" _blank
-  click claude "https://claude.ai" "Visit Claude" _blank
-  click windsurf "https://codeium.com/windsurf" "Visit Windsurf" _blank
-  click cursor "https://cursor.sh" "Visit Cursor" _blank
-  click claudeCode "https://claude.ai/code" "Visit Claude Code" _blank
-  click bolt "https://bolt.new" "Visit Bolt.new" _blank
-  click replit "https://replit.com/ai" "Visit Replit AI" _blank
-  click v0 "https://v0.dev" "Visit v0.dev" _blank
-```
-
-</div>
-
-<div class="mt-6 space-y-2">
-
-<div class="flex items-start space-x-2">
-  <div class="text-yellow-500 text-xl">🔄</div>
-  <div>Many tools cross categories or offer features from multiple categories</div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-blue-500 text-xl">📈</div>
-  <div>The AI coding landscape is rapidly evolving with new tools emerging constantly</div>
-</div>
-
-<div class="flex items-start space-x-2">
-  <div class="text-green-500 text-xl">💵</div>
-  <div>Tools are generally becoming more accessible and affordable over time</div>
-</div>
-
-</div>
 
 ---
 transition: slide-up
@@ -264,155 +73,391 @@ layout: two-cols
 
 # Cursor
 
-<div class="space-y-2 mt-2">
+<div class="space-y-4">
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-amber-400">⏱️</div>
+    <div>
+      <span class="font-bold text-amber-400">Pioneer: </span> 
+      <span class="text-gray-100">One of the oldest AI code editors</span>
+    </div>
+  </div>
 
-- ⏱️ **Pioneer**: One of the oldest AI code editors
-- 🔄 **VSCode Foundation**: Fork of VSCode with AI features
-- 🚀 **Rapid Innovation**: Releases new features quickly
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-blue-400">🔄</div>
+    <div>
+      <span class="font-bold text-blue-400">VSCode Foundation: </span> 
+      <span class="text-gray-100">Fork of VSCode with AI features</span>
+    </div>
+  </div>
 
-- 🤖 **Choose Your Model**: Multiple AI models + API key support
-- 💰 **Worth the Cost**: Only AI tool I currently pay for
-- 🧪 **High Hiring Bar**: Gave me my hardest take home interview last year
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-green-400">🚀</div>
+    <div>
+      <span class="font-bold text-green-400">Rapid Innovation: </span> 
+      <span class="text-gray-100">Releases new features quickly</span>
+    </div>
+  </div>
 
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-purple-400">🤖</div>
+    <div>
+      <span class="font-bold text-purple-400">Choose Your Model: </span> 
+      <span class="text-gray-100">Multiple AI models + API key support</span>
+    </div>
+  </div>
+
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-yellow-400">💰</div>
+    <div>
+      <span class="font-bold text-yellow-400">Worth the Cost: </span> 
+      <span class="text-gray-100">Only AI tool I currently pay for</span>
+    </div>
+  </div>
+
+  <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
+    <div class="text-2xl text-red-400">🧪</div>
+    <div>
+      <span class="font-bold text-red-400">High Hiring Bar: </span> 
+      <span class="text-gray-100">Gave me my hardest take home interview last year</span>
+    </div>
+  </div>
 </div>
+
 ::right::
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-center">
-    <img src="https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-dark.c2eae9ea.png&w=2880&q=75" alt="Cursor logo" class="w-36 h-auto" />
-    <a href="https://cursor.sh" target="_blank" class="text-lg text-blue-400">cursor.sh</a>
+  <div v-motion 
+       :initial="{ scale: 0.8, opacity: 0 }" 
+       :enter="{ scale: 1, opacity: 1, transition: { delay: 300, duration: 800 } }"
+       class="text-center p-8 bg-gradient-to-br from-gray-800/50 to-blue-900/50 rounded-xl backdrop-blur-sm shadow-xl">
+    <img src="https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-dark.c2eae9ea.png&w=2880&q=75" 
+         alt="Cursor logo" 
+         class="w-36 h-auto mx-auto mb-4 drop-shadow-lg hover:scale-105 transition-transform duration-300" />
+    <a href="https://cursor.sh" 
+       target="_blank" 
+       class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center justify-center">
+      cursor.sh
+      <div class="i-carbon-launch ml-1"></div>
+    </a>
   </div>
 </div>
 
 ---
 transition: slide-up
-
+layout: default
 ---
 
-# Tab AI {.text-center}
+# Tab AI
 
-<div class="space-y-2 mt-4">
+<div class="grid grid-cols-2 gap-2 mt-4">
+  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-indigo-500/30 bg-indigo-500/10">
+    <div class="text-xl text-indigo-400 mr-2">⌨️</div>
+    <div>
+      <h3 class="font-bold text-indigo-400 text-sm">Smart Suggestions</h3>
+      <p class="text-gray-200 text-xs">Suggests code changes as you type</p>
+    </div>
+  </div>
 
-- Suggests code changes as you type (press tab to accept)
-- Edits multiple lines simultaneously
-- Auto-imports libraries when needed
-- Recommends cursor movements automatically
-- Best turned off when taking notes
+  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-blue-500/30 bg-blue-500/10">
+    <div class="text-xl text-blue-400 mr-2">✏️</div>
+    <div>
+      <h3 class="font-bold text-blue-400 text-sm">Multi-Line Editing</h3>
+      <p class="text-gray-200 text-xs">Edits multiple lines simultaneously</p>
+    </div>
+  </div>
 
+  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-green-500/30 bg-green-500/10">
+    <div class="text-xl text-green-400 mr-2">📦</div>
+    <div>
+      <h3 class="font-bold text-green-400 text-sm">Smart Imports</h3>
+      <p class="text-gray-200 text-xs">Auto-imports libraries when needed</p>
+    </div>
+  </div>
+
+  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-amber-500/30 bg-amber-500/10">
+    <div class="text-xl text-amber-400 mr-2">🔍</div>
+    <div>
+      <h3 class="font-bold text-amber-400 text-sm">Cursor Navigation</h3>
+      <p class="text-gray-200 text-xs">Recommends cursor movements</p>
+    </div>
+  </div>
 </div>
+
+<div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-red-500/30 bg-red-500/10">
+  <div class="text-xl text-red-400 mr-2">🔔</div>
+  <div>
+    <h3 class="font-bold text-red-400 text-sm">Pro tip</h3>
+    <p class="text-gray-200 text-xs">Turn off Tab AI when taking notes to avoid distracting/ unwanted completions</p>
+  </div>
+</div>
+
+<div 
+  v-motion
+  :initial="{ x: 100, opacity: 0 }"
+  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
+  class="absolute bottom-8 right-8 max-w-xs">
+  <div class="flex items-center">
+    <div class="flex items-center space-x-1">
+      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
+      <span class="text-indigo-400 animate-pulse">→</span>
+      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
+      <span class="text-indigo-400 animate-pulse">→</span>
+      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
+    </div>
+  </div>
+</div>
+
 
 ---
 transition: slide-up
-
+layout: default
 ---
 
-# Command K {.text-center}
+# Command K
 
-<div class="space-y-2 mt-4">
+<div class="grid grid-cols-1 gap-3 mt-6">
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-blue-500/30 bg-blue-500/10 shadow-md">
+    <div class="text-xl text-blue-400 mr-3 mt-0.5">⚡</div>
+    <div>
+      <h3 class="font-bold text-blue-400">Quick Access</h3>
+      <p class="text-gray-200">Quick shortcut for immediate code edits</p>
+    </div>
+  </div>
 
-- Quick shortcut for immediate code edits
-- Works in editor, terminal, or for quick questions
-- Ideal for simple edits (map/filter vs. for loops)
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-teal-500/30 bg-teal-500/10 shadow-md">
+    <div class="text-xl text-teal-400 mr-3 mt-0.5">🔄</div>
+    <div>
+      <h3 class="font-bold text-teal-400">Universal Context</h3>
+      <p class="text-gray-200">Works in editor, terminal, or for quick questions</p>
+    </div>
+  </div>
 
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-amber-500/30 bg-amber-500/10 shadow-md">
+    <div class="text-xl text-amber-400 mr-3 mt-0.5">✨</div>
+    <div>
+      <h3 class="font-bold text-amber-400">Lightweight Transformations</h3>
+      <p class="text-gray-200">Ideal for simple edits (map/filter vs. for loops)</p>
+    </div>
+  </div>
 </div>
+
+<div 
+  v-motion
+  :initial="{ x: 100, opacity: 0 }"
+  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
+  class="absolute bottom-8 right-8 max-w-xs">
+  <div class="flex items-center">
+    <div class="flex items-center space-x-1">
+      <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-400 font-mono">⌘</span>
+      <span class="text-blue-400 animate-pulse">+</span>
+      <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-400 font-mono">K</span>
+    </div>
+  </div>
+</div>
+
 
 ---
 transition: slide-up
-
+layout: default
 ---
 
-# AI Chat {.text-center}
+# AI Chat
 
-<div class="space-y-2 mt-4">
+<div class="grid grid-cols-2 gap-3 mt-4">
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-purple-500/30 bg-purple-500/10 shadow-md">
+    <div class="text-xl text-purple-400 mr-3 mt-0.5">💬</div>
+    <div>
+      <h3 class="font-bold text-purple-400 text-sm">Sidebar Interface</h3>
+      <p class="text-gray-200 text-xs">Chat with AI in sidebar of editor</p>
+    </div>
+  </div>
 
-- Chat with AI in sidebar of editor
-- Reference code, files, or terminal output for context
-- Include folders, codebase, docs, websites, or images
-- Apply changes with one click (with right file open)
-- Best for changes to single files or specific areas
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-blue-500/30 bg-blue-500/10 shadow-md">
+    <div class="text-xl text-blue-400 mr-3 mt-0.5">🔗</div>
+    <div>
+      <h3 class="font-bold text-blue-400 text-sm">Context Aware</h3>
+      <p class="text-gray-200 text-xs">Reference code, files, or terminal output</p>
+    </div>
+  </div>
 
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-indigo-500/30 bg-indigo-500/10 shadow-md">
+    <div class="text-xl text-indigo-400 mr-3 mt-0.5">📂</div>
+    <div>
+      <h3 class="font-bold text-indigo-400 text-sm">Rich Inputs</h3>
+      <p class="text-gray-200 text-xs">Include folders, docs, websites, images</p>
+    </div>
+  </div>
+
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-green-500/30 bg-green-500/10 shadow-md">
+    <div class="text-xl text-green-400 mr-3 mt-0.5">✅</div>
+    <div>
+      <h3 class="font-bold text-green-400 text-sm">One-Click Apply</h3>
+      <p class="text-gray-200 text-xs">Apply changes with right file open</p>
+    </div>
+  </div>
 </div>
+
+<div v-click class="mt-4 flex justify-center w-full">
+  <div class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-yellow-500/30 bg-yellow-500/10 shadow-md w-full">
+    <div class="text-xl text-yellow-400 mr-3 mt-0.5">💡</div>
+    <div>
+      <h3 class="font-bold text-yellow-400 text-sm">Best Practice</h3>
+      <p class="text-gray-200 text-xs">Ideal for targeted changes to single files or specific code areas</p>
+    </div>
+  </div>
+</div>
+
+<div 
+  v-motion
+  :initial="{ x: 100, opacity: 0 }"
+  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
+  class="absolute bottom-8 right-8 max-w-xs">
+  <div class="flex items-center">
+    <div class="flex items-center space-x-2">
+      <span class="px-2 py-1 bg-purple-500/20 border border-purple-500/30 rounded text-xs text-purple-400 flex items-center">
+        <span class="i-carbon-chat-bot mr-1"></span>AI Chat
+      </span>
+      <div class="flex space-x-1">
+        <span class="h-2 w-2 rounded-full bg-purple-400 animate-ping-slow"></span>
+        <span class="h-2 w-2 rounded-full bg-purple-300 animate-ping-slower"></span>
+        <span class="h-2 w-2 rounded-full bg-purple-200 animate-ping-slowest"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ---
 transition: slide-up
-
+layout: default
 ---
 
-# Agent Mode {.text-center}
+# Agent Mode
 
+<div class="grid grid-cols-2 gap-3 mt-4">
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-teal-500/30 bg-teal-500/10 shadow-md">
+    <div class="text-xl text-teal-400 mr-3 mt-0.5">🧠</div>
+    <div>
+      <h3 class="font-bold text-teal-400 text-sm">Enhanced Context</h3>
+      <p class="text-gray-200 text-xs">All features of chat plus auto-context gathering</p>
+    </div>
+  </div>
 
-<div class="space-y-2 mt-4">
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-blue-500/30 bg-blue-500/10 shadow-md">
+    <div class="text-xl text-blue-400 mr-3 mt-0.5">🛠️</div>
+    <div>
+      <h3 class="font-bold text-blue-400 text-sm">Tool Execution</h3>
+      <p class="text-gray-200 text-xs">Run tools via <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" class="text-blue-300 underline hover:text-blue-200">MCP</a> (terminal commands)</p>
+    </div>
+  </div>
 
-- All features of chat plus auto-context gathering
-- Run tools via <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" class="text-blue-400">MCP</a> (terminal commands)
-- Auto-fixes based on lint errors or test failures
-- Complete features end-to-end without interruption
-- YOLO mode for automatic tool execution
-  - Add guardrails to prevent unwanted changes
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-green-500/30 bg-green-500/10 shadow-md">
+    <div class="text-xl text-green-400 mr-3 mt-0.5">🔧</div>
+    <div>
+      <h3 class="font-bold text-green-400 text-sm">Auto-Repair</h3>
+      <p class="text-gray-200 text-xs">Auto-fixes based on lint errors or test failures</p>
+    </div>
+  </div>
 
+  <div v-click class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-purple-500/30 bg-purple-500/10 shadow-md">
+    <div class="text-xl text-purple-400 mr-3 mt-0.5">🔄</div>
+    <div>
+      <h3 class="font-bold text-purple-400 text-sm">End-to-End</h3>
+      <p class="text-gray-200 text-xs">Complete features without interruption</p>
+    </div>
+  </div>
 </div>
+
+<div v-click class="mt-4 grid grid-cols-1 gap-2">
+  <div class="flex items-start p-3 rounded-lg transition-all duration-300 hover:bg-white/5 border border-amber-500/30 bg-amber-500/10 shadow-md">
+    <div class="text-xl text-amber-400 mr-3 mt-0.5">🚀</div>
+    <div>
+      <h3 class="font-bold text-amber-400 text-sm">YOLO Mode</h3>
+      <p class="text-gray-200 text-xs flex items-center">
+        Automatic tool execution 
+        <span class="inline-block ml-2 px-1.5 py-0.5 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-400">
+          Add guardrails to prevent unwanted changes
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div 
+  v-motion
+  :initial="{ x: 100, opacity: 0 }"
+  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
+  class="absolute bottom-8 right-8 max-w-xs">
+  <div class="flex items-center">
+    <span class="text-teal-300 text-sm mr-2">Agent Status:</span>
+    <span class="px-2 py-0.5 bg-green-500/20 border border-green-500/30 rounded text-xs text-green-400 flex items-center">
+      <span class="h-2 w-2 rounded-full bg-green-400 mr-1.5 animate-pulse"></span>Active
+    </span>
+  </div>
+</div>
+
 
 ---
 transition: slide-up
+layout: default
 ---
 
-# Other Features {.text-center}
+# Other Features
 
-<div class="space-y-2 mt-4">
+<div class="grid grid-cols-2 gap-4 mt-6">
+  <div v-click class="p-4 rounded-lg border border-blue-500 bg-blue-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">📝</div>
+      <h3 class="text-lg font-bold text-blue-400">Commit Message Generation</h3>
+    </div>
+    <p class="mt-1 text-sm">Smart commit messages generated based on your code changes</p>
+  </div>
 
-- Auto-generated commit messages
-- Cursor Rules: Project/global prompts (e.g., use uv for Python)
-  - Works with llms.txt files for documentation
-- Modified UI with more space for features
-- Automatic checkpoints in chat (use with caution)
+  <div v-click class="p-4 rounded-lg border border-green-500 bg-green-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-green-400 mr-2">📏</div>
+      <h3 class="text-lg font-bold text-green-400">Cursor Rules</h3>
+    </div>
+    <p class="mt-1 text-sm">Project/global prompts for consistent behavior (e.g., use uv for Python)</p>
+    <p class="mt-1 text-xs text-gray-400">Works with <a href="https://llmstxt.org/" class="text-green-300 hover:underline">llms.txt</a> files for documentation</p>
+  </div>
 
+  <div v-click class="p-4 rounded-lg border border-purple-500 bg-purple-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-purple-400 mr-2">🎨</div>
+      <h3 class="text-lg font-bold text-purple-400">Unlimited Slow Requests w/ Paid Plan</h3>
+    </div>
+    <p class="mt-1 text-sm">Use premium models like Sonnet 3.7 or GPT-4o as much as you want with slow requests</p>
+  </div>
+
+  <div v-click class="p-4 rounded-lg border border-amber-500 bg-amber-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-amber-400 mr-2">🔄</div>
+      <h3 class="text-lg font-bold text-amber-400">Checkpoints</h3>
+    </div>
+    <p class="mt-1 text-sm">Automatic chat checkpoints for progress tracking</p>
+    <p class="mt-1 text-xs text-red-400">Don't rely too much on this for critical work!</p>
+  </div>
 </div>
 
+
 ---
+transition: slide-up
 layout: two-cols
-transition: slide-up
+src: ./pages/use-notes.md
 ---
-
-# Use: Taking Notes
-
-1. Open class slideshow
-2. Screenshot important slides  
-3. Use Cursor to convert to markdown
-4. Convert to Word with Pandoc
-5. Script to automate process
-6. 🤑 **Profit?**
-
-::right::
-
-![Example cheatsheet](/images/cheatsheet.png){class="w-3/4"}
-*Example cheatsheet*{class="text-sm text-gray-400 mt-2"}
 
 ---
 transition: slide-up
-
+layout: two-cols
+src: ./pages/use-ui.md
 ---
-
-# Use: Generate UI {.text-center}
-
-<div class="space-y-2 mt-4">
-
-1. Upload UI library docs into Cursor (e.g., Shadcn)
-2. Add design preferences as cursor rules (optional)
-3. Generate UI components with docs as context
-4. Refine based on feedback and regenerate as needed
-
-</div>
 
 ---
 transition: slide-up
-
 ---
 
-# Pattern: Test Driven Development {.text-center}
-
-<div class="text-6xl floating-element absolute right-20 top-20">🧪</div>
-
-<div class="space-y-2 mt-4">
+# Pattern: Test Driven Development
 
 1. Create new feature
 2. Generate tests with AI
@@ -421,57 +466,60 @@ transition: slide-up
 5. Fix issues if tests fail, otherwise continue
 6. Use integration + unit/property tests
 
-</div>
 
 ---
 transition: slide-up
-
 ---
 
 # Strategy: AI Powered Debugging {.text-center}
 
-<div class="space-y-2 mt-4">
 
 1. Identify code error
 2. Provide context to AI with request to fix + add logging
 3. If unresolved, add new error logs as context
 4. Optionally use agent mode for automated fixing loop
 
-</div>
+---
+transition: slide-up
+---
+
+# Startegy: Reuse Prompts with Clipboard manager
+
+1. Set up clipboard manager like [Raycast](https://www.raycast.com/) or [Window's builtin](https://support.microsoft.com/en-us/windows/using-the-clipboard-30375039-ce71-9fe4-5b30-21b7aab6b13f)
+1. Copy (and optionally pin) commonly used prompts in your workflow
+1. Use when needed with Command K (etc. refactor this code to use {x} library)
 
 ---
 transition: slide-up
-layout: two-cols
+layout: two-cols-header
 ---
 
-# Bottom Up Design
+# Approaches to Design
 
+::left::
 
+## Bottom Up Design
 
 1. Determine structure you want project to be (Nextjs app that uses server actions)
 1. Start by creating project primitives (ex. data sources)
 1. Have AI use your primitives to create project features
+1. Ex. Start with backend and build UI based on that
 
 ::right::
 
-# Top Down Design
+## Top Down Design
 
-
-1. Start with project global
-1. Have AI split goal into subtasks
-1. Split those subtasks into subtasks
+1. Start with goal and have AI split into tasks, subtasks, etc
 1. Write to a file as a todo list (optional)
 1. Have AI do all subtasks to create project
+1. Ex. Start with UI and build based on that
 
 
 ---
 transition: slide-up
-
 ---
 
 # Tips for more efficient generation {.text-center}
-
-<div class="space-y-2 mt-4">
 
 - Update README with project structure (AI can help)
 - Keep requests small and focused
@@ -479,7 +527,6 @@ transition: slide-up
 - Write detailed prompts for complex tasks
 - Stick to popular libraries/frameworks
 
-</div>
 
 ---
 transition: slide-up
@@ -511,8 +558,6 @@ layout: two-cols-header
 ---
 # Closing Thoughts {.text-center}
 
-<div class="mt-2">
-
 ::left::
 ### 🧠 Solidify Fundamentals  
 *Build strong programming foundations to better leverage AI*
@@ -525,7 +570,6 @@ layout: two-cols-header
 ### 🚀 Push Boundaries  
 *Explore new possibilities and expand your coding horizons*
 
-</div>
 
 <div class="mt-4 text-center">
   <span class="text-2xl font-bold text-blue-400 animate-bounce">Happy Coding! 🚀</span>
