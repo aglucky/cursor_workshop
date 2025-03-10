@@ -1,5 +1,7 @@
 # Use Case: Taking Notes
 
+::left::
+
 <div class="grid grid-cols-2 gap-x-4 gap-y-2 mt-3">
   <div v-click class="flex items-center space-x-1.5 p-1 rounded-md bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 transform transition-all duration-300 hover:scale-102">
     <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold">1</div>
@@ -50,7 +52,7 @@
 >
   <div class="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-xl blur-xl"></div>
   <div class="relative bg-gray-900/50 backdrop-blur-sm p-3 rounded-xl border border-blue-400/30 shadow-xl max-w-[85%] mx-auto">
-    <img src="/images/cheatsheet.png" alt="Example cheatsheet" class="w-9/10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mx-auto" />
-    <p class="text-xs text-gray-400 mt-1 text-center italic">Example cheatsheet I made</p>
+    <img src="/images/cheatsheet.png" alt="Example cheatsheet" class="w-8/10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mx-auto" />
+    <p class="text-xs text-gray-400 mt-1 text-center italic">Example cheatsheet I've used</p>
   </div>
 </div>

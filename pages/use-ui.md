@@ -1,5 +1,7 @@
 # Use Case: Design UI Components
 
+::left::
+
 <div class="space-y-4 pr-4">
   <div v-click class="flex items-center space-x-2 transition-all duration-300 hover:translate-x-1">
     <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-500/20 text-blue-400 text-xl">📚</div>

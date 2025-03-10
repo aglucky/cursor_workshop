@@ -146,7 +146,7 @@ layout: two-cols
 ---
 transition: slide-up
 layout: default
-src: cursor.md
+src: ./pages/cursor.md
 ---
 
 
@@ -409,6 +409,26 @@ layout: default
 ---
 transition: slide-up
 layout: two-cols-header
+src: ./pages/use-notes.md
+---
+
+
+---
+transition: slide-up
+src: ./pages/use-ui.md
+layout: two-cols-header
+---
+
+---
+transition: slide-up
+src: ./pages/pat-test.md
+layout: default
+---
+
+---
+transition: slide-up
+src: ./pages/strat-bug.md
+layout: default
 ---
 
 # Coding Mindsets {.gradient-text .mb-8 .text-center}
