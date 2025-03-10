@@ -15,6 +15,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 fonts:
   sans: "Inter"
   mono: "Fira Code"
+download: true
 layout: cover
 ---
 
@@ -178,7 +179,7 @@ layout: default
     <div class="text-xl text-amber-400 mr-3 mt-0.5">✨</div>
     <div>
       <h3 class="font-bold text-amber-400">Lightweight Transformations</h3>
-      <p class="text-gray-200">Ideal for simple edits (map/filter vs. for loops)</p>
+      <p class="text-gray-200">Ideal for simple edits (replace for loops with map/filter)</p>
     </div>
   </div>
 </div>
@@ -289,7 +290,7 @@ layout: default
     <div class="text-xl text-blue-400 mr-3 mt-0.5">🛠️</div>
     <div>
       <h3 class="font-bold text-blue-400 text-sm">Tool Execution</h3>
-      <p class="text-gray-200 text-xs">Run tools via <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" class="text-blue-300 underline hover:text-blue-200">MCP</a> (terminal commands)</p>
+      <p class="text-gray-200 text-xs">Run tools via <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank">MCP</a> (terminal commands)</p>
     </div>
   </div>
 
@@ -316,7 +317,7 @@ layout: default
     <div>
       <h3 class="font-bold text-amber-400 text-sm">YOLO Mode</h3>
       <p class="text-gray-200 text-xs flex items-center">
-        Automatic tool execution 
+        Allow agent to use tools without permission
         <span class="inline-block ml-2 px-1.5 py-0.5 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-400">
           Add guardrails to prevent unwanted changes
         </span>
@@ -352,9 +353,9 @@ layout: default
       <div class="text-2xl text-blue-400 mr-2">📝</div>
       <h3 class="text-lg font-bold text-blue-400">Commit Message Generation</h3>
     </div>
-    <p class="text-sm text-gray-300">Smart commit messages generated based on your code changes</p>
+    <p class="text-sm text-gray-300">Messages are generated based on your code changes</p>
     <div class="mt-2 px-2 py-1 bg-blue-500/10 rounded-md text-xs text-blue-300 inline-block">
-      Auto-generated quality 🎯
+      Descriptive Git Commits 🎯
     </div>
   </div>
 
@@ -363,13 +364,9 @@ layout: default
       <div class="text-2xl text-green-400 mr-2">📏</div>
       <h3 class="text-lg font-bold text-green-400">Cursor Rules</h3>
     </div>
-    <p class="text-sm text-gray-300">Project/global prompts for consistent behavior</p>
-    <div class="mt-2 flex items-center">
-      <span class="text-xs text-gray-400">Works with</span>
-      <a href="https://llmstxt.org/" class="ml-1 text-green-300 hover:text-green-200 text-xs flex items-center">
-        llms.txt
-        <span class="i-carbon-launch ml-0.5 text-xs"></span>
-      </a>
+    <p class="text-sm text-gray-300">Global or project level prompt support</p>
+    <div class="mt-2 px-2 py-1 bg-green-500/10 rounded-md text-xs text-green-300 inline-block">
+      Compatible with formats like <a href="https://llmstxt.org/">llms.txt</a> 🤖
     </div>
   </div>
 
@@ -378,7 +375,7 @@ layout: default
       <div class="text-2xl text-purple-400 mr-2">🎨</div>
       <h3 class="text-lg font-bold text-purple-400">Unlimited Slow Requests</h3>
     </div>
-    <p class="text-sm text-gray-300">Use premium models like Sonnet 3.7 or GPT-4</p>
+    <p class="text-sm text-gray-300">Includes Sonnet 3.7, GPT-4o, and more</p>
     <div class="mt-2 px-2 py-1 bg-purple-500/10 rounded-md text-xs text-purple-300 inline-block">
       Paid Plan Feature ✨
     </div>
@@ -391,7 +388,7 @@ layout: default
     </div>
     <p class="text-sm text-gray-300">Automatic chat checkpoints for progress tracking</p>
     <div class="mt-2 px-2 py-1 bg-red-500/10 rounded-md text-xs text-red-300 inline-block">
-      ⚠️ Use with caution for critical work
+      Use with caution for critical work ⚠️ 
     </div>
   </div>
 </div>
@@ -408,22 +405,6 @@ layout: default
     </span>
   </div>
 </div>
-
-<style>
-.slidev-layout {
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-}
-
-.tip-card.green {
-  @apply border-l-green-500;
-}
-.tip-card.purple {
-  @apply border-l-purple-500;
-}
-.tip-card.amber {
-  @apply border-l-amber-500;
-}
-</style>
 
 ---
 transition: slide-up
@@ -449,7 +430,7 @@ layout: two-cols-header
       </li>
       <li class="flex items-center space-x-2">
         <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">3</div>
-        <span class="text-gray-300">Have AI use primitives for features</span>
+        <span class="text-gray-300">Have AI use primitives for new features</span>
       </li>
     </ul>
   </div>
@@ -626,30 +607,30 @@ layout: two-cols-header
   <div v-click class="tip-card info">
     <div class="flex items-center mb-3">
       <div class="text-3xl text-blue-400 mr-3">🧠</div>
-      <h3 class="text-xl font-bold text-blue-400">Solidify Fundamentals</h3>
+      <h3 class="text-xl font-bold text-blue-400">Be An Engineer</h3>
     </div>
     <p class="text-sm text-gray-300 italic leading-relaxed">
-      Build strong programming foundations to better leverage AI capabilities
+      Use AI as a tool to make you more productive, not as a crutch to do less work.
     </p>
   </div>
 
   <div v-click class="tip-card info purple">
     <div class="flex items-center mb-3">
       <div class="text-3xl text-purple-400 mr-3">💡</div>
-      <h3 class="text-xl font-bold text-purple-400">Strategic Investments</h3>
+      <h3 class="text-xl font-bold text-purple-400">Pick Tools Wisely</h3>
     </div>
     <p class="text-sm text-gray-300 italic leading-relaxed">
-      Choose AI tools that align with your development workflow
+      Don't try to optimize productivity too much, you'll waste more time than you save
     </p>
   </div>
 
   <div v-click class="tip-card info green">
     <div class="flex items-center mb-3">
       <div class="text-3xl text-green-400 mr-3">🚀</div>
-      <h3 class="text-xl font-bold text-green-400">Push Boundaries</h3>
+      <h3 class="text-xl font-bold text-green-400">Experiment</h3>
     </div>
     <p class="text-sm text-gray-300 italic leading-relaxed">
-      Explore new possibilities and expand your coding horizons
+      It's easier than ever to build/deploy projects. A few hours of tinkering can go a long way
     </p>
   </div>
 </div>
@@ -670,11 +651,6 @@ layout: two-cols-header
   The future of coding is here! ✨
 </div>
 
-<style>
-.slidev-layout {
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-}
-</style>
 
 ---
 transition: slide-up
@@ -708,12 +684,8 @@ layout: default
  Ask me anything! 💪
 </div>
 
-<style>
-.slidev-layout {
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-}
-</style>
-
 ---
 layout: end
 ---
+
+# Thank You!
