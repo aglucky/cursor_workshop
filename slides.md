@@ -344,203 +344,376 @@ transition: slide-up
 layout: default
 ---
 
-# Other Features
+# Other Features {.gradient-text .mb-8 .text-center}
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div v-click class="p-4 rounded-lg border border-blue-500 bg-blue-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="tip-card info">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-blue-400 mr-2">📝</div>
       <h3 class="text-lg font-bold text-blue-400">Commit Message Generation</h3>
     </div>
-    <p class="mt-1 text-sm">Smart commit messages generated based on your code changes</p>
+    <p class="text-sm text-gray-300">Smart commit messages generated based on your code changes</p>
+    <div class="mt-2 px-2 py-1 bg-blue-500/10 rounded-md text-xs text-blue-300 inline-block">
+      Auto-generated quality 🎯
+    </div>
   </div>
 
-  <div v-click class="p-4 rounded-lg border border-green-500 bg-green-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+  <div v-click class="tip-card info green">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-green-400 mr-2">📏</div>
       <h3 class="text-lg font-bold text-green-400">Cursor Rules</h3>
     </div>
-    <p class="mt-1 text-sm">Project/global prompts for consistent behavior (e.g., use uv for Python)</p>
-    <p class="mt-1 text-xs text-gray-400">Works with <a href="https://llmstxt.org/" class="text-green-300 hover:underline">llms.txt</a> files for documentation</p>
+    <p class="text-sm text-gray-300">Project/global prompts for consistent behavior</p>
+    <div class="mt-2 flex items-center">
+      <span class="text-xs text-gray-400">Works with</span>
+      <a href="https://llmstxt.org/" class="ml-1 text-green-300 hover:text-green-200 text-xs flex items-center">
+        llms.txt
+        <span class="i-carbon-launch ml-0.5 text-xs"></span>
+      </a>
+    </div>
   </div>
 
-  <div v-click class="p-4 rounded-lg border border-purple-500 bg-purple-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+  <div v-click class="tip-card info purple">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-purple-400 mr-2">🎨</div>
-      <h3 class="text-lg font-bold text-purple-400">Unlimited Slow Requests w/ Paid Plan</h3>
+      <h3 class="text-lg font-bold text-purple-400">Unlimited Slow Requests</h3>
     </div>
-    <p class="mt-1 text-sm">Use premium models like Sonnet 3.7 or GPT-4o as much as you want with slow requests</p>
+    <p class="text-sm text-gray-300">Use premium models like Sonnet 3.7 or GPT-4</p>
+    <div class="mt-2 px-2 py-1 bg-purple-500/10 rounded-md text-xs text-purple-300 inline-block">
+      Paid Plan Feature ✨
+    </div>
   </div>
 
-  <div v-click class="p-4 rounded-lg border border-amber-500 bg-amber-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+  <div v-click class="tip-card info amber">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-amber-400 mr-2">🔄</div>
       <h3 class="text-lg font-bold text-amber-400">Checkpoints</h3>
     </div>
-    <p class="mt-1 text-sm">Automatic chat checkpoints for progress tracking</p>
-    <p class="mt-1 text-xs text-red-400">Don't rely too much on this for critical work!</p>
+    <p class="text-sm text-gray-300">Automatic chat checkpoints for progress tracking</p>
+    <div class="mt-2 px-2 py-1 bg-red-500/10 rounded-md text-xs text-red-300 inline-block">
+      ⚠️ Use with caution for critical work
+    </div>
   </div>
 </div>
 
+<div 
+  v-motion
+  :initial="{ x: 100, opacity: 0 }"
+  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
+  class="absolute bottom-8 right-8 max-w-xs">
+  <div class="flex items-center">
+    <span class="text-blue-300 text-sm mr-2">Features:</span>
+    <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-400 flex items-center">
+      <span class="h-2 w-2 rounded-full bg-blue-400 mr-1.5 animate-pulse"></span>Premium
+    </span>
+  </div>
+</div>
 
----
-transition: slide-up
-layout: two-cols
-src: ./pages/use-notes.md
----
+<style>
+.slidev-layout {
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
 
----
-transition: slide-up
-layout: two-cols
-src: ./pages/use-ui.md
----
-
----
-transition: slide-up
-layout: default
-src: ./pages/pat-test.md
----
-
-
----
-transition: slide-up
-layout: default
-src: ./pages/strat-bug.md
----
-
+.tip-card.green {
+  @apply border-l-green-500;
+}
+.tip-card.purple {
+  @apply border-l-purple-500;
+}
+.tip-card.amber {
+  @apply border-l-amber-500;
+}
+</style>
 
 ---
 transition: slide-up
 layout: two-cols-header
 ---
 
-# Coding Mindsets
+# Coding Mindsets {.gradient-text .mb-8 .text-center}
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div v-click class="p-4 rounded-lg border border-blue-500 bg-blue-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
-    <div class="flex items-center mb-2">
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-4">
       <div class="text-2xl text-blue-400 mr-2">🏗️</div>
       <h3 class="text-lg font-bold text-blue-400">Bottom Up Design</h3>
     </div>
-    <ul class="mt-2 space-y-2 text-sm">
-      <li class="flex items-start">
-        <span class="text-blue-400 mr-2">1.</span>
-        <span>Determine project structure</span>
+    <ul class="space-y-3">
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">1</div>
+        <span class="text-gray-300">Determine project structure</span>
       </li>
-      <li class="flex items-start">
-        <span class="text-blue-400 mr-2">2.</span>
-        <span>Create project primitives (data sources)</span>
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">2</div>
+        <span class="text-gray-300">Create project primitives</span>
       </li>
-      <li class="flex items-start">
-        <span class="text-blue-400 mr-2">3.</span>
-        <span>Have AI use primitives for features</span>
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">3</div>
+        <span class="text-gray-300">Have AI use primitives for features</span>
       </li>
     </ul>
   </div>
 
-  <div v-click class="p-4 rounded-lg border border-green-500 bg-green-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
-    <div class="flex items-center mb-2">
+  <div v-click class="tip-card info green">
+    <div class="flex items-center mb-4">
       <div class="text-2xl text-green-400 mr-2">🎯</div>
       <h3 class="text-lg font-bold text-green-400">Top Down Design</h3>
     </div>
-    <ul class="mt-2 space-y-2 text-sm">
-      <li class="flex items-start">
-        <span class="text-green-400 mr-2">1.</span>
-        <span>Start with goal, split into tasks/subtasks</span>
+    <ul class="space-y-3">
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">1</div>
+        <span class="text-gray-300">Start with goal, split into tasks</span>
       </li>
-      <li class="flex items-start">
-        <span class="text-green-400 mr-2">2.</span>
-        <span>Write todo list (optional)</span>
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">2</div>
+        <span class="text-gray-300">Write todo list (optional)</span>
       </li>
-      <li class="flex items-start">
-        <span class="text-green-400 mr-2">3.</span>
-        <span>Have AI complete all subtasks</span>
+      <li class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">3</div>
+        <span class="text-gray-300">Have AI complete all subtasks</span>
       </li>
     </ul>
   </div>
 </div>
 
-<div class="grid grid-cols-2 gap-4 mt-4">
-  <div v-click class="p-3 rounded-lg border border-blue-500/50 bg-blue-500/5 transition-all duration-300">
+<div class="grid grid-cols-2 gap-6 mt-6">
+  <div v-click class="feature-item">
     <div class="flex items-center">
       <div class="text-xl text-blue-400 mr-2">💡</div>
       <h4 class="font-medium text-blue-400">Example: Backend First</h4>
     </div>
-    <p class="mt-1 text-sm text-gray-300">Start with Nextjs + server actions, then build UI on top</p>
+    <p class="mt-2 text-sm text-gray-300">Start with Nextjs + server actions, then build UI on top</p>
   </div>
 
-  <div v-click class="p-3 rounded-lg border border-green-500/50 bg-green-500/5 transition-all duration-300">
+  <div v-click class="feature-item green">
     <div class="flex items-center">
       <div class="text-xl text-green-400 mr-2">💡</div>
       <h4 class="font-medium text-green-400">Example: UI First</h4>
     </div>
-    <p class="mt-1 text-sm text-gray-300">Design the UI/UX flow, then implement backend to support it</p>
+    <p class="mt-2 text-sm text-gray-300">Design the UI/UX flow, then implement backend to support it</p>
   </div>
 </div>
 
-
----
-transition: slide-up
----
-
-# Tips for more efficient generation {.text-center}
-
-- Update README with project structure (AI can help)
-- Keep requests small and focused
-- Remove incorrect code that might influence output
-- Write detailed prompts for complex tasks
-- Stick to popular libraries/frameworks
-
-
----
-transition: slide-up
-layout: two-cols-header
----
-
-# Things to watch out for {.text-center}
-
-::left::
-
-## ⚠️ Unrelated Breaking Changes
-*Use comprehensive tests to verify functionality*
-
-## ⏳ Easy to Make Irreversible Changes
-*Leverage git to fall back on past working state*
-
-::right::
-
-## 🛑 Placeholder Code Covertly Added
-*Thoroughly validate before production use*
-
-## 🧠 AI Struggles to build complex features
-*Build core logic, let AI handle extensions*
-
-
----
-transition: slide-up
-layout: two-cols-header
----
-# Closing Thoughts {.text-center}
-
-::left::
-### 🧠 Solidify Fundamentals  
-*Build strong programming foundations to better leverage AI*
-
-### 💡 Strategic Investments  
-*Choose AI tools that align with your development workflow*
-
-::right::
-
-### 🚀 Push Boundaries  
-*Explore new possibilities and expand your coding horizons*
-
-
-<div class="mt-4 text-center">
-  <span class="text-2xl font-bold text-blue-400 animate-bounce">Happy Coding! 🚀</span>
+<div class="absolute bottom-5 right-5 text-sm text-gray-400 animate-float">
+  Choose the approach that fits your project best! 🎨
 </div>
+
+
+---
+transition: slide-up
+layout: default
+---
+
+# Tips for More Efficient Generation {.gradient-text .mb-8}
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">📝</div>
+      <h3 class="text-lg font-bold text-blue-400">Document Structure</h3>
+    </div>
+    <p class="text-sm text-gray-300">Keep your README updated with project structure - AI can help maintain it!</p>
+  </div>
+
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">🎯</div>
+      <h3 class="text-lg font-bold text-blue-400">Focus & Clarity</h3>
+    </div>
+    <p class="text-sm text-gray-300">Keep requests small and focused for better results</p>
+  </div>
+
+  <div v-click class="tip-card warning">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">🧹</div>
+      <h3 class="text-lg font-bold text-yellow-400">Clean Slate</h3>
+    </div>
+    <p class="text-sm text-gray-300">Remove incorrect code that might influence output</p>
+  </div>
+
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">✍️</div>
+      <h3 class="text-lg font-bold text-yellow-400">Detailed Prompts</h3>
+    </div>
+    <p class="text-sm text-gray-300">Write comprehensive prompts for complex tasks</p>
+  </div>
+
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">📋</div>
+      <h3 class="text-lg font-bold text-blue-400">Manage Prompts</h3>
+    </div>
+    <p class="text-sm text-gray-300">Use a clipboard manager like<a href="https://www.raycast.com/" target="_blank" class="ml-1 text-blue-400 hover:text-blue-300">Raycast</a></p>
+  </div>
+
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">😎</div>
+      <h3 class="text-lg font-bold text-blue-400">Popularity Rules</h3>
+    </div>
+    <p class="text-sm text-gray-300">Stick to popular libraries/frameworks</p>
+  </div>
+
+</div>
+
+<div class="absolute bottom-5 right-5 text-sm text-gray-400 animate-float">
+  You'll learn what works for you over time 🚀
+</div>
+
+
+
+---
+transition: slide-up
+layout: two-cols-header
+---
+
+# Things to Watch Out For {.gradient-text .mb-8 .text-center}
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="tip-card warning">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">⚠️</div>
+      <h3 class="text-lg font-bold text-yellow-400">Unrelated Breaking Changes</h3>
+    </div>
+    <p class="text-sm text-gray-300">Write tests to verify functionality and catch regressions</p>
+  </div>
+
+  <div v-click class="tip-card warning">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">⏳</div>
+      <h3 class="text-lg font-bold text-yellow-400">Irreversible Modifications</h3>
+    </div>
+    <p class="text-sm text-gray-300">Use version control (git) as a safety net for your code</p>
+  </div>
+
+  <div v-click class="tip-card warning">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">🛑</div>
+      <h3 class="text-lg font-bold text-yellow-400">Hidden Placeholder Code</h3>
+    </div>
+    <p class="text-sm text-gray-300">Always validate AI-generated code before pushing to production</p>
+  </div>
+
+  <div v-click class="tip-card warning">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-yellow-400 mr-2">🧠</div>
+      <h3 class="text-lg font-bold text-yellow-400">Complex Feature Limits</h3>
+    </div>
+    <p class="text-sm text-gray-300">Build core logic yourself, let AI handle the repetitive work</p>
+  </div>
+</div>
+
+<div v-click class="mt-8 flex justify-center">
+  <div class="icon-btn">
+    <span class="mr-2">💡</span>
+    Stay vigilant and maintain best practices
+  </div>
+</div>
+
+<div class="absolute bottom-5 right-5 text-sm text-gray-400 animate-float">
+  Prevention is better than cure! 🛡️
+</div>
+
+
+---
+transition: slide-up
+layout: two-cols-header
+---
+# Closing Thoughts {.gradient-text .mb-8 .text-center}
+
+<div class="grid grid-cols-3 gap-6 mt-12">
+  <div v-click class="tip-card info">
+    <div class="flex items-center mb-3">
+      <div class="text-3xl text-blue-400 mr-3">🧠</div>
+      <h3 class="text-xl font-bold text-blue-400">Solidify Fundamentals</h3>
+    </div>
+    <p class="text-sm text-gray-300 italic leading-relaxed">
+      Build strong programming foundations to better leverage AI capabilities
+    </p>
+  </div>
+
+  <div v-click class="tip-card info purple">
+    <div class="flex items-center mb-3">
+      <div class="text-3xl text-purple-400 mr-3">💡</div>
+      <h3 class="text-xl font-bold text-purple-400">Strategic Investments</h3>
+    </div>
+    <p class="text-sm text-gray-300 italic leading-relaxed">
+      Choose AI tools that align with your development workflow
+    </p>
+  </div>
+
+  <div v-click class="tip-card info green">
+    <div class="flex items-center mb-3">
+      <div class="text-3xl text-green-400 mr-3">🚀</div>
+      <h3 class="text-xl font-bold text-green-400">Push Boundaries</h3>
+    </div>
+    <p class="text-sm text-gray-300 italic leading-relaxed">
+      Explore new possibilities and expand your coding horizons
+    </p>
+  </div>
+</div>
+
+<div v-click class="mt-12 flex justify-center items-center space-x-4">
+  <div class="px-6 py-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
+    <span class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+      Happy Coding! 🚀
+    </span>
+  </div>
+</div>
+
+<div 
+  v-motion
+  :initial="{ y: 50, opacity: 0 }"
+  :enter="{ y: 0, opacity: 1, transition: { delay: 1000, duration: 500 } }"
+  class="absolute bottom-8 right-8 text-sm text-gray-400 animate-float">
+  The future of coding is here! ✨
+</div>
+
+<style>
+.slidev-layout {
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+</style>
+
+---
+transition: slide-up
+layout: default
+---
+
+# Questions? {.gradient-text .text-6xl .mb-12}
+
+<div class="mt-16 flex flex-col items-center justify-center space-y-8">
+  <div class="text-8xl animate-bounce">🤔</div>
+  <div class="text-2xl text-gray-400 font-light">Feel free to ask anything!</div>
+  
+  <div class="mt-8 grid grid-cols-3 gap-4">
+    <div class="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-sm">
+      Clarifications
+    </div>
+    <div class="px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-sm">
+      Best Practices
+    </div>
+    <div class="px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-sm">
+      Next Steps
+    </div>
+  </div>
+</div>
+
+<div 
+  v-motion
+  :initial="{ y: 50, opacity: 0 }"
+  :enter="{ y: 0, opacity: 1, transition: { delay: 1000, duration: 500 } }"
+  class="absolute bottom-8 right-8 text-sm text-gray-400 animate-float">
+ Ask me anything! 💪
+</div>
+
+<style>
+.slidev-layout {
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+</style>
 
 ---
 layout: end
 ---
-
-# Questions?
