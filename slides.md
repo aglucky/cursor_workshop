@@ -386,7 +386,7 @@ layout: default
       <div class="text-2xl text-amber-400 mr-2">🔄</div>
       <h3 class="text-lg font-bold text-amber-400">Checkpoints</h3>
     </div>
-    <p class="text-sm text-gray-300">Automatic chat checkpoints for progress tracking</p>
+    <p class="text-sm text-gray-300">Automatic chat checkpoints to revert to previous codebase states</p>
     <div class="mt-2 px-2 py-1 bg-red-500/10 rounded-md text-xs text-red-300 inline-block">
       Use with caution for critical work ⚠️ 
     </div>
