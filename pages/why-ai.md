@@ -24,7 +24,7 @@
   <div class="text-green-500 text-xl">📄</div>
   <div>
     <div class="font-bold">Documentation & Tests</div>
-    <div class="text-sm opacity-75">Automatically generate comprehensive docs</div>
+    <div class="text-sm opacity-75">Let AI generate docs/tests</div>
   </div>
 </div>
 
