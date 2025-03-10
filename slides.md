@@ -511,9 +511,9 @@ layout: default
   <div v-click class="tip-card info">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-blue-400 mr-2">📝</div>
-      <h3 class="text-lg font-bold text-blue-400">Document Structure</h3>
+      <h3 class="text-lg font-bold text-blue-400">Make a README</h3>
     </div>
-    <p class="text-sm text-gray-300">Keep your README updated with project structure - AI can help maintain it!</p>
+    <p class="text-sm text-gray-300">Use AI to generate README.md with project structure, technologies, etc.</p>
   </div>
 
   <div v-click class="tip-card info">
@@ -521,7 +521,7 @@ layout: default
       <div class="text-2xl text-blue-400 mr-2">🎯</div>
       <h3 class="text-lg font-bold text-blue-400">Focus & Clarity</h3>
     </div>
-    <p class="text-sm text-gray-300">Keep requests small and focused for better results</p>
+    <p class="text-sm text-gray-300">Keep individual requests small and focused</p>
   </div>
 
   <div v-click class="tip-card warning">
@@ -529,21 +529,21 @@ layout: default
       <div class="text-2xl text-yellow-400 mr-2">🧹</div>
       <h3 class="text-lg font-bold text-yellow-400">Clean Slate</h3>
     </div>
-    <p class="text-sm text-gray-300">Remove incorrect code that might influence output</p>
+    <p class="text-sm text-gray-300">Remove incorrect code as it may influence output</p>
   </div>
 
   <div v-click class="tip-card info">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-yellow-400 mr-2">✍️</div>
-      <h3 class="text-lg font-bold text-yellow-400">Detailed Prompts</h3>
+      <h3 class="text-lg font-bold text-yellow-400">Detailed Instructions</h3>
     </div>
-    <p class="text-sm text-gray-300">Write comprehensive prompts for complex tasks</p>
+    <p class="text-sm text-gray-300">Add more details in prompts for complex tasks</p>
   </div>
 
   <div v-click class="tip-card info">
     <div class="flex items-center mb-2">
       <div class="text-2xl text-blue-400 mr-2">📋</div>
-      <h3 class="text-lg font-bold text-blue-400">Manage Prompts</h3>
+      <h3 class="text-lg font-bold text-blue-400">Prompt Management</h3>
     </div>
     <p class="text-sm text-gray-300">Use a clipboard manager like<a href="https://www.raycast.com/" target="_blank" class="ml-1 text-blue-400 hover:text-blue-300">Raycast</a></p>
   </div>
@@ -553,7 +553,7 @@ layout: default
       <div class="text-2xl text-blue-400 mr-2">😎</div>
       <h3 class="text-lg font-bold text-blue-400">Popularity Rules</h3>
     </div>
-    <p class="text-sm text-gray-300">Stick to popular libraries/frameworks</p>
+    <p class="text-sm text-gray-300">Popular libraries/frameworks tend to have best results</p>
   </div>
 
 </div>
@@ -607,8 +607,8 @@ layout: two-cols-header
 
 <div v-click class="mt-8 flex justify-center">
   <div class="icon-btn">
-    <span class="mr-2">💡</span>
-    Stay vigilant and maintain best practices
+    <span class="mr-2"> 👮‍♂️</span>
+    Remember, you're responsible for your code!
   </div>
 </div>
 

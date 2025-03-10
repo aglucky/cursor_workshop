@@ -7,7 +7,7 @@
     <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-500/20 text-blue-400 text-xl">📚</div>
     <div>
       <span class="font-bold text-blue-400">Import Docs: </span> 
-      <span class="text-gray-100">Upload UI library docs into Cursor (e.g., Shadcn)</span>
+      <span class="text-gray-100">Upload UI library docs into Cursor (ex. Shadcn)</span>
     </div>
   </div>
 
@@ -31,7 +31,7 @@
     <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amber-500/20 text-amber-400 text-xl">🔄</div>
     <div>
       <span class="font-bold text-amber-400">Iterate: </span> 
-      <span class="text-gray-100">Refine based on feedback and regenerate</span>
+      <span class="text-gray-100">Provide feedback and/or images and regenerate</span>
     </div>
   </div>
 </div>
