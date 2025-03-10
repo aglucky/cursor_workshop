@@ -18,7 +18,7 @@ fonts:
 layout: cover
 ---
 
-# Introduction to AI Coding
+# Introduction to AI Tools
 
 Best practices for AI powered coding
 
@@ -145,67 +145,9 @@ layout: two-cols
 ---
 transition: slide-up
 layout: default
+src: cursor.md
 ---
 
-# Tab AI
-
-<div class="grid grid-cols-2 gap-2 mt-4">
-  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-indigo-500/30 bg-indigo-500/10">
-    <div class="text-xl text-indigo-400 mr-2">⌨️</div>
-    <div>
-      <h3 class="font-bold text-indigo-400 text-sm">Smart Suggestions</h3>
-      <p class="text-gray-200 text-xs">Suggests code changes as you type</p>
-    </div>
-  </div>
-
-  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-blue-500/30 bg-blue-500/10">
-    <div class="text-xl text-blue-400 mr-2">✏️</div>
-    <div>
-      <h3 class="font-bold text-blue-400 text-sm">Multi-Line Editing</h3>
-      <p class="text-gray-200 text-xs">Edits multiple lines simultaneously</p>
-    </div>
-  </div>
-
-  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-green-500/30 bg-green-500/10">
-    <div class="text-xl text-green-400 mr-2">📦</div>
-    <div>
-      <h3 class="font-bold text-green-400 text-sm">Smart Imports</h3>
-      <p class="text-gray-200 text-xs">Auto-imports libraries when needed</p>
-    </div>
-  </div>
-
-  <div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-amber-500/30 bg-amber-500/10">
-    <div class="text-xl text-amber-400 mr-2">🔍</div>
-    <div>
-      <h3 class="font-bold text-amber-400 text-sm">Cursor Navigation</h3>
-      <p class="text-gray-200 text-xs">Recommends cursor movements</p>
-    </div>
-  </div>
-</div>
-
-<div v-click class="flex items-start p-2 rounded-lg transition-all duration-300 hover:bg-white/5 border border-red-500/30 bg-red-500/10">
-  <div class="text-xl text-red-400 mr-2">🔔</div>
-  <div>
-    <h3 class="font-bold text-red-400 text-sm">Pro tip</h3>
-    <p class="text-gray-200 text-xs">Turn off Tab AI when taking notes to avoid distracting/ unwanted completions</p>
-  </div>
-</div>
-
-<div 
-  v-motion
-  :initial="{ x: 100, opacity: 0 }"
-  :enter="{ x: 0, opacity: 1, transition: { delay: 700, duration: 500 } }"
-  class="absolute bottom-8 right-8 max-w-xs">
-  <div class="flex items-center">
-    <div class="flex items-center space-x-1">
-      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
-      <span class="text-indigo-400 animate-pulse">→</span>
-      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
-      <span class="text-indigo-400 animate-pulse">→</span>
-      <span class="px-2 py-0.5 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-400 font-mono">Tab</span>
-    </div>
-  </div>
-</div>
 
 
 ---
@@ -455,64 +397,86 @@ src: ./pages/use-ui.md
 
 ---
 transition: slide-up
+layout: default
+src: ./pages/pat-test.md
 ---
-
-# Pattern: Test Driven Development
-
-1. Create new feature
-2. Generate tests with AI
-3. Implement another feature
-4. Run tests to verify functionality
-5. Fix issues if tests fail, otherwise continue
-6. Use integration + unit/property tests
 
 
 ---
 transition: slide-up
+layout: default
+src: ./pages/strat-bug.md
 ---
 
-# Strategy: AI Powered Debugging {.text-center}
-
-
-1. Identify code error
-2. Provide context to AI with request to fix + add logging
-3. If unresolved, add new error logs as context
-4. Optionally use agent mode for automated fixing loop
-
----
-transition: slide-up
----
-
-# Startegy: Reuse Prompts with Clipboard manager
-
-1. Set up clipboard manager like [Raycast](https://www.raycast.com/) or [Window's builtin](https://support.microsoft.com/en-us/windows/using-the-clipboard-30375039-ce71-9fe4-5b30-21b7aab6b13f)
-1. Copy (and optionally pin) commonly used prompts in your workflow
-1. Use when needed with Command K (etc. refactor this code to use {x} library)
 
 ---
 transition: slide-up
 layout: two-cols-header
 ---
 
-# Approaches to Design
+# Coding Mindsets
 
-::left::
+<div class="grid grid-cols-2 gap-4 mt-6">
+  <div v-click class="p-4 rounded-lg border border-blue-500 bg-blue-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-blue-400 mr-2">🏗️</div>
+      <h3 class="text-lg font-bold text-blue-400">Bottom Up Design</h3>
+    </div>
+    <ul class="mt-2 space-y-2 text-sm">
+      <li class="flex items-start">
+        <span class="text-blue-400 mr-2">1.</span>
+        <span>Determine project structure</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-blue-400 mr-2">2.</span>
+        <span>Create project primitives (data sources)</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-blue-400 mr-2">3.</span>
+        <span>Have AI use primitives for features</span>
+      </li>
+    </ul>
+  </div>
 
-## Bottom Up Design
+  <div v-click class="p-4 rounded-lg border border-green-500 bg-green-500/10 transition-all duration-300 hover:shadow-lg hover:scale-102">
+    <div class="flex items-center mb-2">
+      <div class="text-2xl text-green-400 mr-2">🎯</div>
+      <h3 class="text-lg font-bold text-green-400">Top Down Design</h3>
+    </div>
+    <ul class="mt-2 space-y-2 text-sm">
+      <li class="flex items-start">
+        <span class="text-green-400 mr-2">1.</span>
+        <span>Start with goal, split into tasks/subtasks</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-400 mr-2">2.</span>
+        <span>Write todo list (optional)</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-400 mr-2">3.</span>
+        <span>Have AI complete all subtasks</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-1. Determine structure you want project to be (Nextjs app that uses server actions)
-1. Start by creating project primitives (ex. data sources)
-1. Have AI use your primitives to create project features
-1. Ex. Start with backend and build UI based on that
+<div class="grid grid-cols-2 gap-4 mt-4">
+  <div v-click class="p-3 rounded-lg border border-blue-500/50 bg-blue-500/5 transition-all duration-300">
+    <div class="flex items-center">
+      <div class="text-xl text-blue-400 mr-2">💡</div>
+      <h4 class="font-medium text-blue-400">Example: Backend First</h4>
+    </div>
+    <p class="mt-1 text-sm text-gray-300">Start with Nextjs + server actions, then build UI on top</p>
+  </div>
 
-::right::
-
-## Top Down Design
-
-1. Start with goal and have AI split into tasks, subtasks, etc
-1. Write to a file as a todo list (optional)
-1. Have AI do all subtasks to create project
-1. Ex. Start with UI and build based on that
+  <div v-click class="p-3 rounded-lg border border-green-500/50 bg-green-500/5 transition-all duration-300">
+    <div class="flex items-center">
+      <div class="text-xl text-green-400 mr-2">💡</div>
+      <h4 class="font-medium text-green-400">Example: UI First</h4>
+    </div>
+    <p class="mt-1 text-sm text-gray-300">Design the UI/UX flow, then implement backend to support it</p>
+  </div>
+</div>
 
 
 ---
@@ -537,18 +501,18 @@ layout: two-cols-header
 
 ::left::
 
-## ⚠️ Silent Breakage  
+## ⚠️ Unrelated Breaking Changes
 *Use comprehensive tests to verify functionality*
 
-## ⏳ Irreversible Changes  
-*Leverage git for robust version control*
+## ⏳ Easy to Make Irreversible Changes
+*Leverage git to fall back on past working state*
 
 ::right::
 
-## 🛑 Placeholder Code  
+## 🛑 Placeholder Code Covertly Added
 *Thoroughly validate before production use*
 
-## 🧠 Complexity Limits  
+## 🧠 AI Struggles to build complex features
 *Build core logic, let AI handle extensions*
 
 

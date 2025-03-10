@@ -18,7 +18,7 @@
   
   <div v-click class="flex items-center space-x-1.5 p-1 rounded-md bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 transform transition-all duration-300 hover:scale-102">
     <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold">4</div>
-    <p class="text-sm">Use <a href="https://pandoc.org/" class="text-blue-400 hover:underline">Pandoc</a> for Word <span class="text-purple-400">🔄</span></p>
+    <p class="text-sm">Use <a href="https://pandoc.org/" class="text-blue-400 hover:underline">Pandoc</a> to convert to Word for cheatsheet<span class="text-purple-400">🔄</span></p>
   </div>
   
   <div v-click class="flex items-center space-x-1.5 p-1 rounded-md bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 transform transition-all duration-300 hover:scale-102">
