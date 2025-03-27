@@ -431,6 +431,12 @@ src: ./pages/strat-bug.md
 layout: default
 ---
 
+
+---
+transition: slide-up
+layout: default
+---
+
 # Coding Mindsets {.gradient-text .mb-8 .text-center}
 
 <div class="grid grid-cols-2 gap-6 mt-8">
